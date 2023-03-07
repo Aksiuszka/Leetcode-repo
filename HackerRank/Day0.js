@@ -96,3 +96,12 @@ function performOperation(secondInteger, secondDecimal, secondString) {
   // Write code that uses console.log to print the concatenation of 'firstString' and 'secondString' on a new line. The        variable 'firstString' must be printed first.
   console.log(firstString.concat(secondString));
 }
+// bonus: sort a string alphabetically but reverse
+
+const string = "Alivederci";
+
+const sorter = (string) => {
+  const splittedString = string.split("").sort().reverse();
+  console.log(splittedString);
+};
+sorter(string);
