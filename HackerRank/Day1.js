@@ -54,3 +54,28 @@ function getPerimeter(length, width) {
   perimeter = 2 * (Number(length) + Number(width));
   return perimeter;
 }
+
+function vowelsAndConsonants(s) {
+  const vowels = [];
+  const consonants = [];
+  let splitted = s.split("");
+  for (let i = 0; i < splitted.length; i++) {
+    if (
+      (splitted[i] === "a") |
+      (splitted[i] === "e") |
+      (splitted[i] === "i") |
+      (splitted[i] === "o") |
+      (splitted[i] === "u")
+    ) {
+      vowels.push(splitted[i]);
+    } else {
+      consonants.push(splitted[i]);
+    }
+  }
+
+  const trimmedConsonants = consonants.filter((item) => item.trim(""));
+  const result = vowels.concat(trimmedConsonants);
+  for (let i = 0; i < result.length; i++) {
+    console.log(result[i].toString());
+  }
+}
