@@ -78,3 +78,25 @@ function getGrade(score) {
 
   return grade;
 }
+
+//Part 4
+
+function getLetter(s) {
+  let letter = s.slice(0, 1);
+
+  switch (letter) {
+    case "a" || "e" || "i" || "o" || "u":
+      letter = "A";
+      break;
+    case "b" || "c" || "d" || "f" || "g":
+      letter = "B";
+      break;
+    case "h" || "j" || "k" || "l" || "m":
+      letter = "C";
+      break;
+    default:
+      letter = "D";
+      break;
+  }
+  return letter;
+}
