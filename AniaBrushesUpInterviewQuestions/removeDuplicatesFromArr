@@ -1,0 +1,14 @@
+//leetcode practice
+
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var removeDuplicates = function(nums) {
+    const result = new Set(nums)
+    const newRes = Array.from(result)
+    for(let i=0; i < newRes.length; i++){
+nums[i]=newRes[i]
+    }
+    return newRes.length
+};
